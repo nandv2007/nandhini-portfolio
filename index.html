@@ -2,153 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nandhini | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Outfit', sans-serif;
-      background: linear-gradient(to right, #ffffff, #f0f0ff);
-      color: #333;
-      overflow-x: hidden;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at center, #fbe9f0, #dff3ff);
-      text-align: center;
-      position: relative;
-      animation: fadeIn 2s ease-in;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background: #ff4f81;
-      top: 20px;
-      left: 20px;
-      filter: blur(80px);
-      z-index: 0;
-    }
-
-    .hero-content {
-      z-index: 1;
-      animation: slideUp 1.5s ease-out;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      color: #111;
-    }
-
-    .highlight {
-      color: #ff4f81;
-      font-weight: 700;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #555;
-      margin-top: 1rem;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 12px 28px;
-      background-color: #ff4f81;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    .cta:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 79, 129, 0.4);
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-      animation: fadeInUp 1.5s ease forwards;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-      position: relative;
-      display: inline-block;
-    }
-
-    h2::after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background-color: #ff4f81;
-      left: 0;
-      bottom: -6px;
-    }
-
-    .about p, .skills ul {
-      font-size: 1.1rem;
-      color: #444;
-      margin-top: 1rem;
-    }
-
-    .skills ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .skills ul li::before {
-      content: '🌸';
-      margin-right: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #222;
-      color: white;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      0% { transform: translateY(50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(40px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </head>
 <body>
   <section class="hero">
     <div class="hero-content">
       <h1>Hi, I'm <span class="highlight">Nandhini</span></h1>
-      <p>Crafting digital stories through code, creativity & clarity.</p>
+      <p>A passionate student exploring code, creativity & possibilities.</p>
       <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Let's Connect</a>
     </div>
   </section>
@@ -156,21 +19,21 @@
   <section class="about">
     <h2>About Me</h2>
     <p>
-      I'm a B.Tech CSE student at Amrita Vishwa Vidyapeetham with a passion for clean design and meaningful code. I love building interfaces that not only look great but feel intuitive.
+      I’m a B.Tech CSE student at Amrita Vishwa Vidyapeetham. I love building, learning, and applying tech to real-world challenges. Whether it's a portfolio or a purpose-driven project, I believe in simplicity, clarity, and creativity.
     </p>
   </section>
 
   <section class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python, SQL, Git, GitHub</li>
-      <li>HTML, CSS, Responsive Web Design</li>
-      <li>Soft Skills: Communication, Leadership, Analytical Thinking</li>
+      <li>💻 Python, SQL, HTML, CSS, Git</li>
+      <li>🧠 Communication, Leadership, Teamwork</li>
+      <li>🌍 Languages: English, Tamil, Hindi, Telugu</li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Nandhini Venkatesan • Designed with 💖 and attention to detail</p>
+    <p>© 2025 Nandhini Venkatesan • Built with 💖 by me</p>
   </footer>
 </body>
 </html>

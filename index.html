@@ -157,16 +157,62 @@
       from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
+      .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .hero::before {
+      content: url('https://cdn-icons-png.flaticon.com/512/727/727803.png');
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      opacity: 0.1;
+      animation: floatLeaf 6s infinite ease-in-out;
+    }
+
+    @keyframes floatLeaf {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #2e2e2e;
+      color: #ccc;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 6px 12px;
+      color: var(--accent);
+      text-decoration: underline;
+      font-size: 1rem;
+      transition: transform 0.3s;
+    }
+
+    footer a:hover {
+      transform: scale(1.05);
+      color: #fff;
+    }
+</style>
 </head>
 <body>
   <section class="hero">
     <img src="Profile.jpg" alt="Nandhini Profile Picture">
     <h1>Hi, I'm Nandhini</h1>
     <p>Passionate about technology and driven to make a difference through innovation.</p>
-    <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Email Me</a>
-    <a href="https://github.com/nandv2007" class="cta" target="_blank">💻 GitHub</a>
-    <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" class="cta" target="_blank">🔗 LinkedIn</a>
+    <div class="cta-group">
+      <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Email Me</a>
+      <a href="https://github.com/nandv2007" class="cta" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" class="cta" target="_blank">🔗 LinkedIn</a>
+    </div>
   </section>
 
   <section class="profile">

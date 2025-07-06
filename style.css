@@ -1,0 +1,73 @@
+/* Google Font */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #f4f7f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
+  color: #222;
+}
+
+.highlight {
+  color: #ff4f81;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about h2 {
+  margin-top: 30px;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 1.2em;
+  list-style: none;
+}
+
+ul li::before {
+  content: "✨";
+  margin-right: 0.6em;
+  color: #ff4f81;
+}
+
+ul li {
+  margin: 12px 0;
+  font-size: 1.05rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  background: #ff4f81;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #e64372;
+}
+

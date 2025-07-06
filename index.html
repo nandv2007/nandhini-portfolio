@@ -1,39 +1,221 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nandhini | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #ffffff, #e6f2ff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #e6f2ff, #ffffff);
+      text-align: center;
+      position: relative;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero-content {
+      z-index: 1;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #111;
+      animation: floatText 4s infinite ease-in-out;
+    }
+
+    .highlight {
+      color: #0066cc;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-top: 1rem;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 12px 28px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 102, 204, 0.4);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background-color: #0066cc;
+      left: 0;
+      bottom: -6px;
+    }
+
+    .about p, .skills ul, .education ul {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 1rem;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .skills ul, .education ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills ul li::before, .education ul li::before {
+      content: '•';
+      margin-right: 10px;
+      color: #0066cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #222;
+      color: white;
+      animation: fadeIn 2s ease-in;
+    }
+
+    footer a {
+      display: block;
+      margin: 6px 0;
+      color: #66b3ff;
+      text-decoration: underline;
+      font-size: 1rem;
+      transition: transform 0.3s;
+    }
+
+    footer a:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(0, 102, 204, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0); }
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <section class="hero">
     <div class="hero-content">
+      <img src="https://avatars.githubusercontent.com/u/154181358?v=4" alt="Nandhini Profile Picture" style="width: 160px; height: 160px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.2); margin-bottom: 1.5rem; animation: fadeIn 2s ease-in-out;">
       <h1>Hi, I'm <span class="highlight">Nandhini</span></h1>
-      <p>A passionate student exploring code, creativity & possibilities.</p>
+      <p>Passionate about technology and driven to make a difference through innovation.</p>
       <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Let's Connect</a>
     </div>
+  </section>
+
+  <section class="profile">
+    <h2>My Profile</h2>
+    <p style="font-size: 1.1rem; color: #444; margin-top: 1rem; animation: fadeInUp 1.5s ease-in-out;">
+      Known for my dedication, communication skills, and ability to connect with others, I'm always looking for ways to grow both personally and professionally.
+      I’m enthusiastic about learning how to run impactful campaigns, connect with people, and inspire support for social initiatives.
+    </p>
   </section>
 
   <section class="about">
     <h2>About Me</h2>
     <p>
-      I’m a B.Tech CSE student at Amrita Vishwa Vidyapeetham. I love building, learning, and applying tech to real-world challenges. Whether it's a portfolio or a purpose-driven project, I believe in simplicity, clarity, and creativity.
+      I'm Nandhini Venkatesan, a B.Tech CSE student at Amrita Vishwa Vidyapeetham, Chennai. I believe in using my skills and energy to bring about positive change. I'm passionate about both technology and social impact, and I'm always seeking opportunities to grow both personally and professionally.
     </p>
   </section>
 
   <section class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>💻 Python, SQL, HTML, CSS, Git</li>
-      <li>🧠 Communication, Leadership, Teamwork</li>
-      <li>🌍 Languages: English, Tamil, Hindi, Telugu</li>
+      <li>Python, SQL, HTML, CSS, Git, GitHub</li>
+      <li>Graphic Design, Presentations, Public Speaking</li>
+      <li>Soft Skills: Organization, Leadership, Communication, Problem Solving</li>
+      <li>Languages: English (Fluent), Tamil (Native), Hindi (Basic), Telugu (Basic)</li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in Computer Science – Amrita Vishwa Vidyapeetham (2025)</li>
+      <li>High School Diploma – Sri Chaitanya College of Education (2023–2025)</li>
+      <li>Middle School Diploma – MAV Vidhyashram (2015–2023)</li>
+      <li>Primary School Diploma – Jawahar Vidhyalaya (2010–2015)</li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Nandhini Venkatesan • Built with 💖 by me</p>
+    <p>© 2025 Nandhini Venkatesan • Designed with care and curiosity</p>
+    <div style="margin-top: 1rem;">
+      <a href="mailto:nandhinivenkatesan07@gmail.com">📧 Email Me</a>
+      <a href="https://github.com/nandv2007" target="_blank">⭐ Follow me on GitHub</a>
+      <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" target="_blank">🔗 Connect with me on LinkedIn</a>
+    </div>
   </footer>
 </body>
 </html>

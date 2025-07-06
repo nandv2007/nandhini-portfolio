@@ -14,118 +14,109 @@
 
     body {
       font-family: 'Outfit', sans-serif;
-      background: linear-gradient(to right, #ffffff, #e6f2ff);
-      color: #333;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f8f8f8;
       overflow-x: hidden;
     }
 
     .hero {
       height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at center, #e6f2ff, #ffffff);
       text-align: center;
-      position: relative;
-      animation: fadeIn 2s ease-in;
+      background: linear-gradient(135deg, #1c1c1c 0%, #2c3e50 100%);
+      padding: 40px 20px;
     }
 
-    .hero-content {
-      z-index: 1;
-      animation: slideUp 1.5s ease-out;
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffd700;
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+      margin-bottom: 20px;
     }
 
     .hero h1 {
-      font-size: 3.5rem;
-      color: #111;
-      animation: floatText 4s infinite ease-in-out;
-    }
-
-    .highlight {
-      color: #0066cc;
+      font-size: 3rem;
       font-weight: 700;
+      color: #ffd700;
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: #444;
-      margin-top: 1rem;
-      animation: fadeIn 3s ease-in;
+      color: #dcdcdc;
+      margin-top: 0.5rem;
     }
 
     .cta {
       display: inline-block;
-      margin-top: 2rem;
+      margin: 10px;
       padding: 12px 28px;
-      background-color: #0066cc;
-      color: white;
+      background: #ffd700;
+      color: #222;
+      font-weight: 500;
       text-decoration: none;
       border-radius: 30px;
-      font-weight: 500;
       transition: all 0.3s ease;
-      animation: pulse 2s infinite;
     }
 
     .cta:hover {
+      background: #e5c100;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 102, 204, 0.4);
+      box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3);
     }
 
     section {
-      padding: 80px 20px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-      animation: fadeInUp 1.5s ease forwards;
     }
 
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
-      position: relative;
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
       display: inline-block;
-      animation: slideUp 1s ease-in-out;
     }
 
-    h2::after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background-color: #0066cc;
-      left: 0;
-      bottom: -6px;
-    }
-
-    .about p, .skills ul, .education ul {
+    .about p,
+    .profile p,
+    .skills ul,
+    .education ul {
       font-size: 1.1rem;
-      color: #444;
-      margin-top: 1rem;
-      animation: fadeInUp 1.5s ease-in-out;
+      line-height: 1.6;
+      color: #e0e0e0;
     }
 
-    .skills ul, .education ul {
+    .skills ul,
+    .education ul {
       list-style: none;
       padding-left: 0;
     }
 
-    .skills ul li::before, .education ul li::before {
-      content: '•';
+    .skills ul li::before,
+    .education ul li::before {
+      content: '⟡';
       margin-right: 10px;
-      color: #0066cc;
+      color: #ffd700;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #222;
-      color: white;
-      animation: fadeIn 2s ease-in;
+      background: #111;
+      color: #aaa;
     }
 
     footer a {
       display: block;
       margin: 6px 0;
-      color: #66b3ff;
+      color: #ffd700;
       text-decoration: underline;
       font-size: 1rem;
       transition: transform 0.3s;
@@ -133,52 +124,23 @@
 
     footer a:hover {
       transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      0% { transform: translateY(50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(40px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.4); }
-      70% { box-shadow: 0 0 0 10px rgba(0, 102, 204, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0); }
-    }
-
-    @keyframes floatText {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <section class="hero">
-    <div class="hero-content">
-      <img src="Profile.jpg" alt="Nandhini Profile Picture" style="width: 160px; height: 160px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.2); margin-bottom: 1.5rem; animation: fadeIn 2s ease-in-out;">
-      
-      <h1>Hi, I'm <span class="highlight">Nandhini</span></h1>
-      <p>Passionate about technology and driven to make a difference through innovation.</p>
-      <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Let's Connect</a>
-      <a href="https://github.com/nandv2007" class="cta" target="_blank">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" class="cta" target="_blank">🔗 LinkedIn</a>
-    </div>
+    <img src="Profile.jpg" alt="Nandhini Profile Picture">
+    <h1>Hi, I'm Nandhini</h1>
+    <p>Passionate about technology and driven to make a difference through innovation.</p>
+    <a href="mailto:nandhinivenkatesan07@gmail.com" class="cta">📬 Email Me</a>
+    <a href="https://github.com/nandv2007" class="cta" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" class="cta" target="_blank">🔗 LinkedIn</a>
   </section>
 
   <section class="profile">
     <h2>My Profile</h2>
-    <p style="font-size: 1.1rem; color: #444; margin-top: 1rem; animation: fadeInUp 1.5s ease-in-out;">
+    <p>
       Known for my dedication, communication skills, and ability to connect with others, I'm always looking for ways to grow both personally and professionally.
       I’m enthusiastic about learning how to run impactful campaigns, connect with people, and inspire support for social initiatives.
     </p>
@@ -187,7 +149,7 @@
   <section class="about">
     <h2>About Me</h2>
     <p>
-      I'm Nandhini Venkatesan, a B.Tech CSE student at Amrita Vishwa Vidyapeetham. I believe in using my skills and energy to bring about positive change. I'm passionate about both technology and social impact, and I'm always seeking opportunities to grow both personally and professionally.
+      I'm Nandhini Venkatesan, a B.Tech CSE student at Amrita Vishwa Vidyapeetham, Chennai. I believe in using my skills and energy to bring about positive change. I'm passionate about both technology and social impact, and I'm always seeking opportunities to grow both personally and professionally.
     </p>
   </section>
 
@@ -221,6 +183,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

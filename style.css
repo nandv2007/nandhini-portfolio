@@ -83,5 +83,12 @@ footer {
   background-color: #222;
   color: white;
 }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; padding: 0 10px; }
+  .hero img { width: 130px; height: 130px; }
+  section { padding: 40px 15px; }
+  .cta { padding: 10px 20px; font-size: 0.9rem; }
+}
 
 

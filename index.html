@@ -29,7 +29,9 @@
 
     .hero {
       height: 100vh;
-      background: url('https://www.transparenttextures.com/patterns/cream-dust.png'), linear-gradient(to bottom right, #fefcf7, #e8e0d2);
+      background: linear-gradient(to bottom right, #ffffff, #e6e6e6);
+      background-image: radial-gradient(circle at 1px 1px, #ccc 1px, transparent 0);
+      background-size: 20px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -165,16 +167,7 @@
       margin-top: 20px;
     }
 
-    .hero::before {
-      content: url('https://cdn-icons-png.flaticon.com/512/727/727803.png');
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 60px;
-      height: 60px;
-      opacity: 0.1;
-      animation: floatLeaf 6s infinite ease-in-out;
-    }
+    
 
     @keyframes floatLeaf {
       0%, 100% { transform: translateY(0); }
@@ -253,9 +246,9 @@
   <footer>
     <p>© 2025 Nandhini Venkatesan • Designed with care and curiosity</p>
     <div style="margin-top: 1rem;">
-      <a href="mailto:nandhinivenkatesan07@gmail.com">📧 Email Me</a>
-      <a href="https://github.com/nandv2007" target="_blank">⭐ Follow me on GitHub</a>
-      <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" target="_blank">🔗 Connect with me on LinkedIn</a>
+      <a href="mailto:nandhinivenkatesan07@gmail.com"> Email Me</a>
+      <a href="https://github.com/nandv2007" target="_blank"> Follow me on GitHub</a>
+      <a href="https://www.linkedin.com/in/nandhini-venkatesan-40665033b" target="_blank"> Connect with me on LinkedIn</a>
     </div>
   </footer>
 </body>
